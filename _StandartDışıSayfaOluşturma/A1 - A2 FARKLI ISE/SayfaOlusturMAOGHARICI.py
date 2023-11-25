@@ -6,7 +6,8 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 # Yeni font dosyasının yolu
 # Bu kısımdaki dosya yolunu kendi bilgisayarınızda olan ile güncelleyiniz.
-font_path = r"C:\Users\PC\Desktop\ÇALIŞMA DOSYALARI\CaviarDreams_Bold.ttf"
+# Yeni font dosyasının yolu {yourUserName} kısmına kendi kullanıcı adınızı yazınız.
+font_path = r"C:\Users\{yourUserName}\Desktop\fonts\CaviarDreams_Bold.ttf"
 
 # PDF oluşturacak fonksiyonu tanımlıyoruz
 

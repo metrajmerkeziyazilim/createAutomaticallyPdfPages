@@ -3,8 +3,8 @@ from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
-# Yeni font dosyasının yolu
-font_path = r"C:\Users\PC\Desktop\ÇALIŞMA DOSYALARI\CaviarDreams_Bold.ttf"
+# Yeni font dosyasının yolu {yourUserName} kısmına kendi kullanıcı adınızı yazınız.
+font_path = r"C:\Users\{yourUserName}\Desktop\fonts\CaviarDreams_Bold.ttf"
 
 
 def create_pdf(create_pages):
