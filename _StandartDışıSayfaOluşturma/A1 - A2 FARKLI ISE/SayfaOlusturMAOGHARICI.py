@@ -5,6 +5,7 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
 # Yeni font dosyasının yolu
+# Bu kısımdaki dosya yolunu kendi bilgisayarınızda olan ile güncelleyiniz.
 font_path = r"C:\Users\PC\Desktop\ÇALIŞMA DOSYALARI\CaviarDreams_Bold.ttf"
 
 # PDF oluşturacak fonksiyonu tanımlıyoruz
@@ -12,7 +13,7 @@ font_path = r"C:\Users\PC\Desktop\ÇALIŞMA DOSYALARI\CaviarDreams_Bold.ttf"
 
 def create_pdf(create_pages):
     # Yeni fontu kaydediyoruz
-    pdfmetrics.registerFont(TTFont('CaviarDreamsBold', font_path))
+    pdfmetrics.registerFont(TTFont("CaviarDreamsBold", font_path))
 
     # Her sayfa içeriği için döngü oluşturuyoruz
     for idx, page_content in enumerate(create_pages):
@@ -42,9 +43,20 @@ def create_pdf(create_pages):
 # Ana program başlangıcı
 if __name__ == "__main__":
     # Oluşturulacak sayfaların içeriğini belirliyoruz
-    create_pages = ["Alt Yapi Hesapları", "Deprem Hesabı", "A1 Kenar Ayak Hesapları", "A2 Kenar Ayak Hesapları", "Orta Ayak Hesapları", "Orta Ayak Temel Hesapları",
-                    "P1 Aksı Orta Ayak Temel Hesapları", "Kenar Ayak Hesapları", "A1 Kenar Ayak Hesapları", "A2 Kenar Ayak Hesapları",
-                    "Döşeme Hesapları", "Başlık Kirişi Kesit Tesirleri"]
+    create_pages = [
+        "Alt Yapi Hesapları",
+        "Deprem Hesabı",
+        "A1 Kenar Ayak Hesapları",
+        "A2 Kenar Ayak Hesapları",
+        "Orta Ayak Hesapları",
+        "Orta Ayak Temel Hesapları",
+        "P1 Aksı Orta Ayak Temel Hesapları",
+        "Kenar Ayak Hesapları",
+        "A1 Kenar Ayak Hesapları",
+        "A2 Kenar Ayak Hesapları",
+        "Döşeme Hesapları",
+        "Başlık Kirişi Kesit Tesirleri",
+    ]
 
     # PDF oluşturma fonksiyonunu çağırıyoruz
     create_pdf(create_pages)
